@@ -24,12 +24,15 @@
 
  ## 5. Не объявляйте ненужные переменные
       Больше переменных, больше места в памяти.
-Например, вместо того, чтобы писать это:
-       const sidebar = sidebar.querySelector ('# боковая панель');
-       const параграф = foo.querySelector ('p');
-       paragraph.textContent = 'foo';
+ Например, вместо того, чтобы писать это:
+
+    const sidebar = sidebar.querySelector ('# боковая панель');
+    const параграф = foo.querySelector ('p');
+    paragraph.textContent = 'foo';
 Вы можете написать это:
-       document.querySelector ('# боковая панель p'). textContent = 'foo';
+
+    document.querySelector ('# боковая панель p'). textContent = 'foo';
+
  В первом случае у нас было две переменные. После небольшой реструктуризации у нас теперь нет переменных.
 
  ## 6.Не используйте новый объект ()
